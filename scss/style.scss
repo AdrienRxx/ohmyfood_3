@@ -7,6 +7,8 @@
   box-sizing: border-box;
 }
 
+/* Header and city */
+
 header {
   font-family: "Shrikhand", cursive;
   text-align: center;
@@ -33,4 +35,19 @@ main .city {
 
 main .city i {
   font-size: 24px;
+}
+
+/* Explorer */
+
+.text-explorer {
+  text-align: center;
+}
+
+.text-explorer h2 {
+  margin-top: 32 px;
+  font-size: 32px;
+}
+
+.text-explorer p {
+  font-size: 16px;
 }
