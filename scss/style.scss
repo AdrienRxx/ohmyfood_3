@@ -41,6 +41,7 @@ main .city i {
 
 .text-explorer {
   text-align: center;
+  margin-bottom: 64px;
 }
 
 .text-explorer h2 {
@@ -72,4 +73,51 @@ main .city i {
 .text-explorer button:hover {
   transform: scale(1.02);
   opacity: 0.9;
+}
+
+/* Fonctionnement */
+
+.working {
+  counter-reset: steps;
+  margin-right: 16px;
+  & ol {
+    display: flex;
+    gap: 32px;
+    @media (max-width: 1000px) {
+      flex-direction: column;
+    }
+  }
+  & li {
+    position: relative;
+    &::before {
+      content: counter(steps);
+      counter-increment: steps;
+      color: white;
+      background-color: #9356dc;
+      width: 32px;
+      height: 32px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      position: absolute;
+      bottom: 16px;
+      left: -16px;
+    }
+    list-style-type: none;
+    background-color: f6f6f6;
+    padding: 24px 32px;
+    border-radius: 16px;
+    box-shadow: 2px 1px 16px -3px black;
+  }
+  & li:hover {
+    transform: scale(1.02);
+  }
+  & i.fas {
+    margin-right: 16px;
+    color: lightgrey;
+    font-size: 24px;
+  }
+  & h2 {
+    margin-left: 32px;
+  }
 }

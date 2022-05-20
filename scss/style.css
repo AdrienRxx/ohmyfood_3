@@ -4,7 +4,7 @@
 ::before ::after {
   margin: 0;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 /* Header and city */
@@ -13,7 +13,7 @@ header {
   text-align: center;
   padding: 4px;
   -webkit-box-shadow: 0 0 0.5rem black;
-  box-shadow: 0 0 0.5rem black;
+          box-shadow: 0 0 0.5rem black;
   margin: 0;
   position: relative;
 }
@@ -28,11 +28,11 @@ main .city {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 16px;
   background-color: #f3f3f3;
   text-align: center;
@@ -46,6 +46,7 @@ main .city i {
 /* Explorer */
 .text-explorer {
   text-align: center;
+  margin-bottom: 64px;
 }
 
 .text-explorer h2 {
@@ -66,19 +67,9 @@ main .city i {
   border-radius: 32px;
   margin-top: 16px;
   -webkit-box-shadow: 2px 1px 16px -3px black;
-  box-shadow: 2px 1px 16px -3px black;
-  background-image: -webkit-gradient(
-    linear,
-    left bottom,
-    left top,
-    from(rgba(147, 86, 220, 0.9)),
-    to(rgba(255, 121, 218, 0.9))
-  );
-  background-image: linear-gradient(
-    to top,
-    rgba(147, 86, 220, 0.9),
-    rgba(255, 121, 218, 0.9)
-  );
+          box-shadow: 2px 1px 16px -3px black;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(147, 86, 220, 0.9)), to(rgba(255, 121, 218, 0.9)));
+  background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
   -webkit-transition: -webkit-transform 100ms;
   transition: -webkit-transform 100ms;
   transition: transform 100ms;
@@ -87,7 +78,70 @@ main .city i {
 
 .text-explorer button:hover {
   -webkit-transform: scale(1.02);
-  transform: scale(1.02);
+          transform: scale(1.02);
   opacity: 0.9;
+}
+
+/* Fonctionnement */
+.working {
+  counter-reset: steps;
+  margin-right: 16px;
+}
+
+.working ol {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 32px;
+}
+
+@media (max-width: 1000px) {
+  .working ol {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.working li {
+  position: relative;
+  list-style-type: none;
+  background-color: f6f6f6;
+  padding: 24px 32px;
+  border-radius: 16px;
+  -webkit-box-shadow: 2px 1px 16px -3px black;
+          box-shadow: 2px 1px 16px -3px black;
+}
+
+.working li::before {
+  content: counter(steps);
+  counter-increment: steps;
+  color: white;
+  background-color: #9356dc;
+  width: 32px;
+  height: 32px;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 16px;
+  left: -16px;
+}
+
+.working li:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+}
+
+.working i.fas {
+  margin-right: 16px;
+  color: lightgrey;
+  font-size: 24px;
+}
+
+.working h2 {
+  margin-left: 32px;
 }
 /*# sourceMappingURL=style.css.map */
