@@ -4,7 +4,7 @@
 ::before ::after {
   margin: 0;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 header {
@@ -12,10 +12,33 @@ header {
   text-align: center;
   padding: 4px;
   -webkit-box-shadow: 0 0 0.5rem black;
-  box-shadow: 0 0 0.5rem black;
+          box-shadow: 0 0 0.5rem black;
+  margin: 0;
+  position: relative;
 }
 
 body {
   margin: 0px;
+  font-family: "Roboto", sans-serif;
+}
+
+main .city {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 16px;
+  background-color: #f3f3f3;
+  text-align: center;
+  padding: 8px;
+}
+
+main .city i {
+  font-size: 24px;
 }
 /*# sourceMappingURL=style.css.map */
