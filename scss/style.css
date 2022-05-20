@@ -4,7 +4,7 @@
 ::before ::after {
   margin: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* Header and city */
@@ -13,7 +13,7 @@ header {
   text-align: center;
   padding: 4px;
   -webkit-box-shadow: 0 0 0.5rem black;
-          box-shadow: 0 0 0.5rem black;
+  box-shadow: 0 0 0.5rem black;
   margin: 0;
   position: relative;
 }
@@ -28,11 +28,11 @@ main .city {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   gap: 16px;
   background-color: #f3f3f3;
   text-align: center;
@@ -55,5 +55,39 @@ main .city i {
 
 .text-explorer p {
   font-size: 16px;
+}
+
+.text-explorer button {
+  color: white;
+  font-weight: 300;
+  font-size: 24px;
+  padding: 16px 32px;
+  border: none;
+  border-radius: 32px;
+  margin-top: 16px;
+  -webkit-box-shadow: 2px 1px 16px -3px black;
+  box-shadow: 2px 1px 16px -3px black;
+  background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    from(rgba(147, 86, 220, 0.9)),
+    to(rgba(255, 121, 218, 0.9))
+  );
+  background-image: linear-gradient(
+    to top,
+    rgba(147, 86, 220, 0.9),
+    rgba(255, 121, 218, 0.9)
+  );
+  -webkit-transition: -webkit-transform 100ms;
+  transition: -webkit-transform 100ms;
+  transition: transform 100ms;
+  transition: transform 100ms, -webkit-transform 100ms;
+}
+
+.text-explorer button:hover {
+  -webkit-transform: scale(1.02);
+  transform: scale(1.02);
+  opacity: 0.9;
 }
 /*# sourceMappingURL=style.css.map */

@@ -51,3 +51,25 @@ main .city i {
 .text-explorer p {
   font-size: 16px;
 }
+
+.text-explorer button {
+  color: white;
+  font-weight: 300;
+  font-size: 24px;
+  padding: 16px 32px;
+  border: none;
+  border-radius: 32px;
+  margin-top: 16px;
+  box-shadow: 2px 1px 16px -3px black;
+  background-image: linear-gradient(
+    to top,
+    rgba(147, 86, 220, 0.9),
+    rgba(255, 121, 218, 0.9)
+  );
+  transition: transform 100ms;
+}
+
+.text-explorer button:hover {
+  transform: scale(1.02);
+  opacity: 0.9;
+}
