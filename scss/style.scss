@@ -21,7 +21,7 @@ header {
 
 main {
   @media (max-width:1000px) {
-    padding: 0 16px;
+    padding: 0px;
   }
 }
 body {
@@ -140,9 +140,9 @@ main .city i {
 
 .menus {
   @include color-greyf6;
-  margin-left: 32px;
-  margin-right: 16px;
-  margin-bottom: 32px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-bottom: 52px;
   h2 {
     padding-top: 40px;
   }
