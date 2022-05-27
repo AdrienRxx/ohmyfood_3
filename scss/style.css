@@ -130,8 +130,10 @@ main .city i {
   place-items: center;
   border-radius: 50%;
   position: absolute;
-  bottom: 16px;
+  top: 50%;
   left: -16px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 .working li:hover {
@@ -147,5 +149,49 @@ main .city i {
 
 .working h2 {
   margin-left: 32px;
+  margin-bottom: 32px;
+}
+
+.menus {
+  background-color: #f6f6f6;
+  margin-left: 32px;
+  margin-right: 16px;
+}
+
+.menus .menus-cards {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+}
+
+@media (max-width: 767px) {
+  .menus .menus-cards {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.menus .card-image {
+  height: 240px;
+  background-size: cover;
+  border-radius: 16px;
+}
+
+.menus .card-image-1 {
+  background-image: url("../images/menu-1.jpg");
+}
+
+.menus .card-image-2 {
+  background-image: url("../images/menu-2.jpg");
+}
+
+.menus .card-image-3 {
+  background-image: url("../images/menu-3.jpg");
+}
+
+.menus .card-image-4 {
+  background-image: url("../images/menu-4.jpg");
 }
 /*# sourceMappingURL=style.css.map */

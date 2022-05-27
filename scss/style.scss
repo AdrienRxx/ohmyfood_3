@@ -105,8 +105,9 @@ main .city i {
       place-items: center;
       border-radius: 50%;
       position: absolute;
-      bottom: 16px;
+      top: 50%;
       left: -16px;
+      transform: translateY(-50%);
     }
     list-style-type: none;
     @include color-greyf6;
@@ -119,10 +120,39 @@ main .city i {
   }
   & i.fas {
     margin-right: 16px;
-    color: lightgrey;
+    @include color-button;
     font-size: 24px;
   }
   & h2 {
     margin-left: 32px;
+    margin-bottom: 32px
+  }
+}
+
+.menus {
+  @include color-greyf6;
+  margin-left: 32px;
+  margin-right: 16px;
+
+  .menus-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+    @media (max-width: 767px) {
+     grid-template-columns: repeat(1,1fr);
+    }
+  }
+
+  .card {
+    &-image {
+      height: 240px;
+      background-size: cover;
+      border-radius: 16px;
+    }
+    @for $i from 1 through 4 {
+      &-image-#{$i} {
+        background-image: url("../images/menu-#{$i}.jpg");
+      }
+    }
   }
 }
