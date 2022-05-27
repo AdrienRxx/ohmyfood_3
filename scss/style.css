@@ -23,6 +23,11 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 main .city {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -173,10 +178,28 @@ main .city i {
   }
 }
 
+.menus .menus-cards .new {
+  position: relative;
+}
+
+.menus .menus-cards .new::before {
+  content: "Nouveau";
+  position: absolute;
+  height: 32px;
+  width: 80px;
+  background-color: #99e2d0;
+  color: #1b6150;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  right: 16px;
+  top: 16px;
+}
+
 .menus .card-image {
   height: 240px;
   background-size: cover;
-  border-radius: 16px;
+  border-radius: 16px 16px 0 0;
 }
 
 .menus .card-image-1 {
@@ -193,5 +216,26 @@ main .city i {
 
 .menus .card-image-4 {
   background-image: url("../images/menu-4.jpg");
+}
+
+.menus .card-description {
+  position: relative;
+}
+
+.menus .card-description h3, .menus .card-description p {
+  margin: 8px;
+}
+
+.menus .card-description h3 {
+  padding-top: 8px;
+}
+
+.menus .card-description i {
+  font-size: 32px;
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 /*# sourceMappingURL=style.css.map */

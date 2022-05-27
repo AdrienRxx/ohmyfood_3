@@ -24,6 +24,11 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 main .city {
   display: flex;
   align-items: center;
@@ -141,17 +146,48 @@ main .city i {
     @media (max-width: 767px) {
      grid-template-columns: repeat(1,1fr);
     }
+    .new {
+      position: relative;  
+    }
+    .new::before {
+      content: "Nouveau";
+      position: absolute;
+      height: 32px;
+      width: 80px;
+      @include background-color-tertiary;
+      @include color-tertiary;
+      display: grid;
+      place-items: center;
+      right: 16px;
+      top: 16px;
+    }
   }
 
   .card {
     &-image {
       height: 240px;
       background-size: cover;
-      border-radius: 16px;
+      border-radius: 16px 16px 0 0;
     }
     @for $i from 1 through 4 {
       &-image-#{$i} {
         background-image: url("../images/menu-#{$i}.jpg");
+      }
+    }
+    &-description {
+      position: relative;
+      h3,p {
+        margin: 8px;
+      }
+      h3 {
+        padding-top: 8px;
+      }
+      i {
+       font-size: 32px;
+       position: absolute;
+       right: 16px;
+       top: 50%;
+       transform: translateY(-50%);
       }
     }
   }

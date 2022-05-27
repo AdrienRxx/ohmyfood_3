@@ -17,3 +17,11 @@
 @mixin color-button {
     color: lightgrey;
 }
+
+@mixin background-color-tertiary {
+    background-color: #99e2d0 ;
+}
+
+@mixin color-tertiary {
+    color: darken(#99e2d0, $amount: 50%);
+}
