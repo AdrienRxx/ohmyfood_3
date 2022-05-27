@@ -1,0 +1,15 @@
+@mixin base-shadow {
+    box-shadow: 2px 1px 16px -3px black;
+}
+
+@mixin color-city {
+    background-color: #F3F3F3;
+}
+
+@mixin color-greyf6 {
+    background-color: #f6f6f6;
+}
+
+@mixin color-purple {
+    background-color: #9356dc;
+}

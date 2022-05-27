@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100&family=Roboto:wght@300;400;500&family=Shrikhand&display=swap");
+@import "../scss/utils/utils.scss";
 
 *,
 ::before ::after {
@@ -28,7 +29,7 @@ main .city {
   align-items: center;
   justify-content: center;
   gap: 16px;
-  background-color: #f3f3f3;
+  @include color-city;
   text-align: center;
   padding: 8px;
 }
@@ -42,6 +43,9 @@ main .city i {
 .text-explorer {
   text-align: center;
   margin-bottom: 64px;
+  @include color-greyf6;
+  margin-top: -26px;
+  padding-bottom: 42px;
 }
 
 .text-explorer h2 {
@@ -61,7 +65,7 @@ main .city i {
   border: none;
   border-radius: 32px;
   margin-top: 16px;
-  box-shadow: 2px 1px 16px -3px black;
+  @include base-shadow;
   background-image: linear-gradient(
     to top,
     rgba(147, 86, 220, 0.9),
@@ -89,11 +93,12 @@ main .city i {
   }
   & li {
     position: relative;
+    @include color-greyf6;
     &::before {
       content: counter(steps);
       counter-increment: steps;
       color: white;
-      background-color: #9356dc;
+      @include color-purple;
       width: 32px;
       height: 32px;
       display: grid;
@@ -104,10 +109,10 @@ main .city i {
       left: -16px;
     }
     list-style-type: none;
-    background-color: f6f6f6;
+    @include color-greyf6;
     padding: 24px 32px;
     border-radius: 16px;
-    box-shadow: 2px 1px 16px -3px black;
+    @include base-shadow;
   }
   & li:hover {
     transform: scale(1.02);

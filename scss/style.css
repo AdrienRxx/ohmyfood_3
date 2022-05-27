@@ -34,7 +34,7 @@ main .city {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 16px;
-  background-color: #f3f3f3;
+  background-color: #F3F3F3;
   text-align: center;
   padding: 8px;
 }
@@ -47,6 +47,9 @@ main .city i {
 .text-explorer {
   text-align: center;
   margin-bottom: 64px;
+  background-color: #f6f6f6;
+  margin-top: -26px;
+  padding-bottom: 42px;
 }
 
 .text-explorer h2 {
@@ -106,8 +109,9 @@ main .city i {
 
 .working li {
   position: relative;
+  background-color: #f6f6f6;
   list-style-type: none;
-  background-color: f6f6f6;
+  background-color: #f6f6f6;
   padding: 24px 32px;
   border-radius: 16px;
   -webkit-box-shadow: 2px 1px 16px -3px black;
