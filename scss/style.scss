@@ -19,6 +19,11 @@ header {
   position: relative;
 }
 
+main {
+  @media (max-width:1000px) {
+    padding: 0 16px;
+  }
+}
 body {
   margin: 0px;
   font-family: "Roboto", sans-serif;
@@ -49,8 +54,8 @@ main .city i {
   text-align: center;
   margin-bottom: 64px;
   @include color-greyf6;
-  margin-top: -26px;
   padding-bottom: 42px;
+  padding-top: 18px;
 }
 
 .text-explorer h2 {
@@ -92,6 +97,7 @@ main .city i {
   & ol {
     display: flex;
     gap: 32px;
+    margin-bottom: 52px;
     @media (max-width: 1000px) {
       flex-direction: column;
     }
@@ -134,15 +140,21 @@ main .city i {
   }
 }
 
+/* Menus */
+
 .menus {
   @include color-greyf6;
   margin-left: 32px;
   margin-right: 16px;
-
+  margin-bottom: 32px;
+  h2 {
+    padding-top: 40px;
+  }
   .menus-cards {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 32px;
+    
     @media (max-width: 767px) {
      grid-template-columns: repeat(1,1fr);
     }
@@ -176,11 +188,11 @@ main .city i {
     }
     &-description {
       position: relative;
+      background-color: white;
+      border-radius: 0 0 16px 16px;
+     
       h3,p {
-        margin: 8px;
-      }
-      h3 {
-        padding-top: 8px;
+        padding: 4.8px;
       }
       i {
        font-size: 32px;
@@ -190,5 +202,17 @@ main .city i {
        transform: translateY(-50%);
       }
     }
+  }
+}
+
+/* footer */
+
+footer {
+  @include background-color-footer;
+  padding: 16px 32px;
+  color: white;
+  h2 {
+    font-family: "Shrikhand", "sans-serif";
+    font-weight: 500;
   }
 }

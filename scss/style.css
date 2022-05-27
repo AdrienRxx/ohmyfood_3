@@ -18,6 +18,12 @@ header {
   position: relative;
 }
 
+@media (max-width: 1000px) {
+  main {
+    padding: 0 16px;
+  }
+}
+
 body {
   margin: 0px;
   font-family: "Roboto", sans-serif;
@@ -39,7 +45,7 @@ main .city {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 16px;
-  background-color: #F3F3F3;
+  background-color: #7e7e7e;
   text-align: center;
   padding: 8px;
 }
@@ -53,8 +59,8 @@ main .city i {
   text-align: center;
   margin-bottom: 64px;
   background-color: #f6f6f6;
-  margin-top: -26px;
   padding-bottom: 42px;
+  padding-top: 18px;
 }
 
 .text-explorer h2 {
@@ -101,6 +107,7 @@ main .city i {
   display: -ms-flexbox;
   display: flex;
   gap: 32px;
+  margin-bottom: 52px;
 }
 
 @media (max-width: 1000px) {
@@ -157,10 +164,16 @@ main .city i {
   margin-bottom: 32px;
 }
 
+/* Menus */
 .menus {
   background-color: #f6f6f6;
   margin-left: 32px;
   margin-right: 16px;
+  margin-bottom: 32px;
+}
+
+.menus h2 {
+  padding-top: 40px;
 }
 
 .menus .menus-cards {
@@ -220,14 +233,12 @@ main .city i {
 
 .menus .card-description {
   position: relative;
+  background-color: white;
+  border-radius: 0 0 16px 16px;
 }
 
 .menus .card-description h3, .menus .card-description p {
-  margin: 8px;
-}
-
-.menus .card-description h3 {
-  padding-top: 8px;
+  padding: 4.8px;
 }
 
 .menus .card-description i {
@@ -237,5 +248,17 @@ main .city i {
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+}
+
+/* footer */
+footer {
+  background-color: #353535;
+  padding: 16px 32px;
+  color: white;
+}
+
+footer h2 {
+  font-family: "Shrikhand", "sans-serif";
+  font-weight: 500;
 }
 /*# sourceMappingURL=style.css.map */

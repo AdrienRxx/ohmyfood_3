@@ -3,7 +3,7 @@
 }
 
 @mixin color-city {
-    background-color: #F3F3F3;
+    background-color: #7e7e7e;
 }
 
 @mixin color-greyf6 {
@@ -24,4 +24,8 @@
 
 @mixin color-tertiary {
     color: darken(#99e2d0, $amount: 50%);
+}
+
+@mixin background-color-footer {
+    background-color: #353535;
 }
