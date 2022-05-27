@@ -76,11 +76,7 @@ main .city i {
   border-radius: 32px;
   margin-top: 16px;
   @include base-shadow;
-  background-image: linear-gradient(
-    to top,
-    rgba(147, 86, 220, 0.9),
-    rgba(255, 121, 218, 0.9)
-  );
+  @include gradient;
   transition: transform 100ms;
 }
 
@@ -200,6 +196,18 @@ main .city i {
        right: 16px;
        top: 50%;
        transform: translateY(-50%);
+      }
+      .fas {
+        color: transparent;
+        @include gradient;
+        background-clip: text;
+        -webkit-background-clip: text;
+        opacity: 0;
+        transition: all 200ms;
+      }
+      &:hover .fas {
+        opacity: 1;
+        transform: translateY(-50%) scale(1.2);
       }
     }
   }
