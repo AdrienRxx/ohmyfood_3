@@ -121,6 +121,7 @@ main .city i {
     padding: 24px 32px;
     border-radius: 16px;
     box-shadow: $base-shadow;
+    font-weight: bold;
   }
   & li:hover {
     transform: scale(1.02);
@@ -148,7 +149,7 @@ main .city i {
   padding-right: 16px;
   padding-bottom: 52px;
   h2 {
-    padding-top: 40px;
+    padding-top: 60px;
   }
   h3 {
     margin-top:0px;

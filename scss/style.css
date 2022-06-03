@@ -128,6 +128,7 @@ main .city i {
   border-radius: 16px;
   -webkit-box-shadow: 2px 1px 16px -3px black;
           box-shadow: 2px 1px 16px -3px black;
+  font-weight: bold;
 }
 
 .working li::before {
@@ -156,7 +157,7 @@ main .city i {
 
 .working i.fas {
   margin-right: 16px;
-  color: lightgrey;
+  color: #7E7E7E;
   font-size: 24px;
 }
 
@@ -178,7 +179,7 @@ main .city i {
 }
 
 .menus h2 {
-  padding-top: 40px;
+  padding-top: 60px;
 }
 
 .menus h3 {
