@@ -293,4 +293,9 @@ footer h2 {
   font-family: "Shrikhand", "sans-serif";
   font-weight: 500;
 }
+
+footer i.fas {
+  width: 25px;
+  height: 100%;
+}
 /*# sourceMappingURL=style.css.map */
