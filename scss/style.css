@@ -176,12 +176,15 @@ main .city i {
   padding-top: 40px;
 }
 
+.menus h3 {
+  margin-top: 0px;
+}
+
 .menus .menus-cards {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
-  gap: 32px;
 }
 
 @media (max-width: 767px) {

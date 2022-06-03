@@ -39,7 +39,7 @@ main .city {
   align-items: center;
   justify-content: center;
   gap: 16px;
-  @include color-city;
+  background-color: $color-city;
   text-align: center;
   padding: 8px;
 }
@@ -53,7 +53,7 @@ main .city i {
 .text-explorer {
   text-align: center;
   margin-bottom: 64px;
-  @include color-greyf6;
+  background-color: $color-greyf6;
   padding-bottom: 42px;
   padding-top: 18px;
 }
@@ -75,8 +75,8 @@ main .city i {
   border: none;
   border-radius: 32px;
   margin-top: 16px;
-  @include base-shadow;
-  @include gradient;
+  box-shadow: $base-shadow;
+  background-image: $gradient;
   transition: transform 100ms;
 }
 
@@ -100,12 +100,12 @@ main .city i {
   }
   & li {
     position: relative;
-    @include color-greyf6;
+    background-color: $color-greyf6;
     &::before {
       content: counter(steps);
       counter-increment: steps;
       color: white;
-      @include color-purple;
+      background-color: $color-purple;
       width: 32px;
       height: 32px;
       display: grid;
@@ -117,17 +117,17 @@ main .city i {
       transform: translateY(-50%);
     }
     list-style-type: none;
-    @include color-greyf6;
+    background-color: $color-greyf6;
     padding: 24px 32px;
     border-radius: 16px;
-    @include base-shadow;
+    box-shadow: $base-shadow;
   }
   & li:hover {
     transform: scale(1.02);
   }
   & i.fas {
     margin-right: 16px;
-    @include color-button;
+    color: $color-button;
     font-size: 24px;
   }
   & h2 {
@@ -139,17 +139,19 @@ main .city i {
 /* Menus */
 
 .menus {
-  @include color-greyf6;
+  background-color: $color-greyf6;
   padding-left: 16px;
   padding-right: 16px;
   padding-bottom: 52px;
   h2 {
     padding-top: 40px;
   }
+  h3 {
+    margin-top:0px;
+  }
   .menus-cards {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 32px;
     
     @media (max-width: 767px) {
      grid-template-columns: repeat(1,1fr);
@@ -162,8 +164,8 @@ main .city i {
       position: absolute;
       height: 32px;
       width: 80px;
-      @include background-color-tertiary;
-      @include color-tertiary;
+      background-color: $background-color-tertiary;
+      color: $color-tertiary;
       display: grid;
       place-items: center;
       right: 16px;
@@ -199,7 +201,7 @@ main .city i {
       }
       .fas {
         color: transparent;
-        @include gradient;
+        background-image: $gradient;
         background-clip: text;
         -webkit-background-clip: text;
         opacity: 0;
@@ -216,7 +218,7 @@ main .city i {
 /* footer */
 
 footer {
-  @include background-color-footer;
+  background-color: $background-color-footer;
   padding: 16px 32px;
   color: white;
   h2 {
