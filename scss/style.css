@@ -246,8 +246,14 @@ main .city i {
   border-radius: 0 0 16px 16px;
 }
 
-.menus .card-description h3, .menus .card-description p {
-  padding: 4.8px;
+.menus .card-description h3 {
+  padding: 18px 0px 0px 8px;
+  margin-bottom: 0px;
+}
+
+.menus .card-description p {
+  padding: 0px 0px 18px 8px;
+  margin-top: 2px;
 }
 
 .menus .card-description i {

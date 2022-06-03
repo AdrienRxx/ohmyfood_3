@@ -194,8 +194,13 @@ main .city i {
       background-color: white;
       border-radius: 0 0 16px 16px;
      
-      h3,p {
-        padding: 4.8px;
+      h3 {
+        padding: 18px 0px 0px 8px;
+        margin-bottom: 0px;
+      }
+      p {
+        padding: 0px 0px 18px 8px;
+        margin-top: 2px;
       }
       i {
        font-size: 32px;
