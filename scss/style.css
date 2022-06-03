@@ -45,7 +45,7 @@ main .city {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 16px;
-  background-color: #7e7e7e;
+  background-color: #EAEAEA;
   text-align: center;
   padding: 8px;
 }
@@ -58,7 +58,7 @@ main .city i {
 .text-explorer {
   text-align: center;
   margin-bottom: 64px;
-  background-color: #f6f6f6;
+  background-color: #F6F6F6;
   padding-bottom: 42px;
   padding-top: 18px;
 }
@@ -75,7 +75,7 @@ main .city i {
 .text-explorer button {
   color: white;
   font-weight: 300;
-  font-size: 24px;
+  font-size: 15px;
   padding: 16px 32px;
   border: none;
   border-radius: 32px;
@@ -121,9 +121,9 @@ main .city i {
 
 .working li {
   position: relative;
-  background-color: #f6f6f6;
+  background-color: #F6F6F6;
   list-style-type: none;
-  background-color: #f6f6f6;
+  background-color: #F6F6F6;
   padding: 24px 32px;
   border-radius: 16px;
   -webkit-box-shadow: 2px 1px 16px -3px black;
@@ -151,12 +151,17 @@ main .city i {
 .working li:hover {
   -webkit-transform: scale(1.02);
           transform: scale(1.02);
+  background-color: #F5EDFF;
 }
 
 .working i.fas {
   margin-right: 16px;
   color: lightgrey;
   font-size: 24px;
+}
+
+.working i.fas:hover {
+  color: #9356dc;
 }
 
 .working h2 {
@@ -166,7 +171,7 @@ main .city i {
 
 /* Menus */
 .menus {
-  background-color: #f6f6f6;
+  background-color: #F6F6F6;
   padding-left: 16px;
   padding-right: 16px;
   padding-bottom: 52px;
@@ -185,6 +190,7 @@ main .city i {
   display: grid;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
+  gap: 0px 20px;
 }
 
 @media (max-width: 767px) {
