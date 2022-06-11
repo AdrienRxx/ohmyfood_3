@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100&family=Roboto:wght@300;400;500&family=Shrikhand&display=swap");
 @import "../scss/utils/utils.scss";
+@import "./pages/restaurant.scss";
 
 *,
 ::before ::after {
@@ -124,6 +125,9 @@ main .city i {
     font-weight: bold;
   }
   & li:hover {
+    i.fas{
+      color: $color-purple;
+    }
     transform: scale(1.02);
     background-color: $color-purple-hover;
   }
@@ -132,9 +136,7 @@ main .city i {
     color: $color-button;
     font-size: 24px;
   }
-  & i.fas:hover {
-    color: $color-purple;
-  }
+    
   & h2 {
     margin-left: 32px;
     margin-bottom: 32px

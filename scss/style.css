@@ -1,5 +1,48 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100&family=Roboto:wght@300;400;500&family=Shrikhand&display=swap");
+img {
+  max-width: 100%;
+}
+
+main h2 {
+  font-family: "Shrikhand", "sans-serif";
+  padding-left: 30px;
+}
+
+main i {
+  position: relative;
+  font-size: 32px;
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+main .fas {
+  margin-top: 40px;
+  padding-right: 40px;
+  color: transparent;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#9356dc), to(#ff79da));
+  background-image: linear-gradient(to top, #9356dc, #ff79da);
+  background-clip: text;
+  -webkit-background-clip: text;
+  opacity: 0;
+  -webkit-transition: all 200ms;
+  transition: all 200ms;
+}
+
+main .far {
+  margin-top: 40px;
+  padding-right: 42px;
+}
+
+main:hover .fas {
+  opacity: 1;
+  -webkit-transform: translateY(-50%) scale(1.2);
+          transform: translateY(-50%) scale(1.2);
+}
+
 *,
 ::before ::after {
   margin: 0;
@@ -155,14 +198,14 @@ main .city i {
   background-color: #F5EDFF;
 }
 
+.working li:hover i.fas {
+  color: #9356dc;
+}
+
 .working i.fas {
   margin-right: 16px;
   color: #7E7E7E;
   font-size: 24px;
-}
-
-.working i.fas:hover {
-  color: #9356dc;
 }
 
 .working h2 {

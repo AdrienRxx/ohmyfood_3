@@ -1,0 +1,40 @@
+@import "../utils/utils.scss";
+
+img {
+max-width: 100%;
+}
+
+main h2 {
+    font-family: "Shrikhand", "sans-serif";
+    padding-left: 30px;
+}
+
+main {
+    i {
+        
+        position: relative;
+        font-size: 32px;
+        position: absolute;
+        right: 16px;
+        top: 50%;
+        transform: translateY(-50%);
+       }
+       .fas {
+         margin-top: 40px;
+         padding-right: 40px;
+         color: transparent;
+         background-image: $gradient;
+         background-clip: text;
+         -webkit-background-clip: text;
+         opacity: 0;
+         transition: all 200ms;
+       }
+       .far {
+           margin-top: 40px;
+           padding-right: 42px;
+       }
+       &:hover .fas {
+         opacity: 1;
+         transform: translateY(-50%) scale(1.2);
+       }
+}
