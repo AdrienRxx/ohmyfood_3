@@ -14,15 +14,15 @@
   }
 }
 
-main h2 {
-  font-family: "Shrikhand", "sans-serif";
-  padding-left: 30px;
+.banner img .banner {
+  z-index: 0;
+  position: relative;
 }
 
 main i {
-  position: relative;
   font-size: 32px;
-  right: 1px;
+  position: absolute;
+  right: 16px;
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
@@ -43,5 +43,32 @@ main:hover .fas {
   opacity: 1;
   -webkit-transform: translateY(-50%) scale(1.2);
           transform: translateY(-50%) scale(1.2);
+}
+
+.resto-main {
+  margin-top: -32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 1;
+  position: relative;
+  background-color: #F6F6F6;
+  border-radius: 32px 32px 0 0;
+}
+
+.resto-main h2 {
+  font-family: "Shrikhand", "cursive";
+  padding: 16px 16px;
+}
+
+.container-coeurs {
+  position: relative;
+  border: 1px solid red;
 }
 /*# sourceMappingURL=restaurant.css.map */

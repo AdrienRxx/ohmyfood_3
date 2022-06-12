@@ -1,44 +1,66 @@
 @import "../utils/utils.scss";
 
 .banner img {
-width: 100%;
-height: 60vh;
-object-fit: cover;
-object-position: center;
-@media (max-width: 767px){
+  width: 100%;
+  height: 60vh;
+  object-fit: cover;
+  object-position: center;
+
+  @media (max-width: 767px) {
     max-width: 100%;
     height: auto;
-}
+  }
 
-}
+  .banner {
+    z-index: 0;
+    position: relative;
+  }
 
-main h2 {
-    font-family: "Shrikhand", "sans-serif";
-    padding-left: 30px;
 }
 
 main {
-    i {
-        
-        position: relative;
-        font-size: 32px;
-        right: 1px;
-        top: 50%;
-        transform: translateY(-50%);
-       }
-       .fas {
-         color: transparent;
-         background-image: $gradient;
-         background-clip: text;
-         -webkit-background-clip: text;
-         opacity: 0;
-         transition: all 200ms;
-       }
-       .far {
-    
-       }
-       &:hover .fas {
-         opacity: 1;
-         transform: translateY(-50%) scale(1.2);
-       }
+  i {
+    font-size: 32px;
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .fas {
+    color: transparent;
+    background-image: $gradient;
+    background-clip: text;
+    -webkit-background-clip: text;
+    opacity: 0;
+    transition: all 200ms;
+  }
+
+  &:hover .fas {
+    opacity: 1;
+    transform: translateY(-50%) scale(1.2);
+  }
+}
+
+.resto-main {
+  margin-top: -32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+  position: relative;
+  background-color: $color-greyf6;
+  border-radius: 32px 32px 0 0;
+
+  h2 {
+    font-family: "Shrikhand", "cursive";
+    padding: 16px 16px;
+
+
+  }
+}
+
+.container-coeurs {
+  position: relative;
+  border: 1px solid red;
 }

@@ -10,15 +10,13 @@ $color-button: #7E7E7E;
 
 $background-color-tertiary: #99e2d0;
 
-$color-tertiary: darken(#99e2d0, $amount: 50%);;
+$color-tertiary: darken(#99e2d0, $amount: 50%);
+;
 
 $background-color-footer: #353535;
 
-$gradient: linear-gradient(
-    to top,
+$gradient: linear-gradient(to top,
     rgba(147, 86, 220, 1),
-    rgba(255, 121, 218, 1)
-  );
+    rgba(255, 121, 218, 1));
 
 $color-purple-hover: #F5EDFF;
-

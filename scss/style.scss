@@ -25,6 +25,7 @@ main {
     padding: 0px;
   }
 }
+
 body {
   margin: 0px;
   font-family: "Roboto", sans-serif;
@@ -91,17 +92,21 @@ main .city i {
 .working {
   counter-reset: steps;
   margin-right: 16px;
+
   & ol {
     display: flex;
     gap: 32px;
     margin-bottom: 52px;
+
     @media (max-width: 1000px) {
       flex-direction: column;
     }
   }
+
   & li {
     position: relative;
     background-color: $color-greyf6;
+
     &::before {
       content: counter(steps);
       counter-increment: steps;
@@ -117,6 +122,7 @@ main .city i {
       left: -16px;
       transform: translateY(-50%);
     }
+
     list-style-type: none;
     background-color: $color-greyf6;
     padding: 24px 32px;
@@ -124,19 +130,22 @@ main .city i {
     box-shadow: $base-shadow;
     font-weight: bold;
   }
+
   & li:hover {
-    i.fas{
+    i.fas {
       color: $color-purple;
     }
+
     transform: scale(1.02);
     background-color: $color-purple-hover;
   }
+
   & i.fas {
     margin-right: 16px;
     color: $color-button;
     font-size: 24px;
   }
-    
+
   & h2 {
     margin-left: 32px;
     margin-bottom: 32px
@@ -150,23 +159,28 @@ main .city i {
   padding-left: 16px;
   padding-right: 16px;
   padding-bottom: 52px;
+
   h2 {
     padding-top: 60px;
   }
+
   h3 {
-    margin-top:0px;
+    margin-top: 0px;
   }
+
   .menus-cards {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 0px 20px;
-    
+
     @media (max-width: 767px) {
-     grid-template-columns: repeat(1,1fr);
+      grid-template-columns: repeat(1, 1fr);
     }
+
     .new {
-      position: relative;  
+      position: relative;
     }
+
     .new::before {
       content: "Nouveau";
       position: absolute;
@@ -187,31 +201,36 @@ main .city i {
       background-size: cover;
       border-radius: 16px 16px 0 0;
     }
+
     @for $i from 1 through 4 {
       &-image-#{$i} {
         background-image: url("../images/menu-#{$i}.jpg");
       }
     }
+
     &-description {
       position: relative;
       background-color: white;
       border-radius: 0 0 16px 16px;
-     
+
       h3 {
         padding: 18px 0px 0px 8px;
         margin-bottom: 0px;
       }
+
       p {
         padding: 0px 0px 18px 8px;
         margin-top: 2px;
       }
+
       i {
-       font-size: 32px;
-       position: absolute;
-       right: 16px;
-       top: 50%;
-       transform: translateY(-50%);
+        font-size: 32px;
+        position: absolute;
+        right: 16px;
+        top: 50%;
+        transform: translateY(-50%);
       }
+
       .fas {
         color: transparent;
         background-image: $gradient;
@@ -220,6 +239,7 @@ main .city i {
         opacity: 0;
         transition: all 200ms;
       }
+
       &:hover .fas {
         opacity: 1;
         transform: translateY(-50%) scale(1.2);
@@ -234,10 +254,12 @@ footer {
   background-color: $background-color-footer;
   padding: 16px 32px;
   color: white;
+
   h2 {
     font-family: "Shrikhand", "sans-serif";
     font-weight: 500;
   }
+
   & i.fas {
     width: 25px;
     height: 100%
