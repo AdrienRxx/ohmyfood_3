@@ -62,5 +62,50 @@ main {
 
 .container-coeurs {
   position: relative;
-  border: 1px solid red;
+}
+
+.menus {
+  background-color: $color-greyf6;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  padding: 0 32px;
+
+  @media (max-width: 767px) {
+    grid-template-columns: 1fr;
+  }
+
+  .menus-category {
+    background-color: white;
+    border-radius: 16px;
+
+    .menus-item {
+      display: flex;
+
+
+      .menus-item-price {
+        margin-left: auto;
+        font-weight: 900;
+        padding: 8px;
+        display: flex;
+        align-items: flex-end;
+      }
+
+      .menus-item-check {
+        background-color: $background-color-tertiary;
+      }
+    }
+  }
+
+}
+
+.menus-item-description {
+  margin: 0;
+  padding: 8px;
+
+  h4,
+  p {
+    margin: 0;
+
+  }
 }

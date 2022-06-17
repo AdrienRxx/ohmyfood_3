@@ -69,6 +69,59 @@ main:hover .fas {
 
 .container-coeurs {
   position: relative;
-  border: 1px solid red;
+}
+
+.menus {
+  background-color: #F6F6F6;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  padding: 0 32px;
+}
+
+@media (max-width: 767px) {
+  .menus {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+.menus .menus-category {
+  background-color: white;
+  border-radius: 16px;
+}
+
+.menus .menus-category .menus-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menus .menus-category .menus-item .menus-item-price {
+  margin-left: auto;
+  font-weight: 900;
+  padding: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.menus .menus-category .menus-item .menus-item-check {
+  background-color: #99e2d0;
+}
+
+.menus-item-description {
+  margin: 0;
+  padding: 8px;
+}
+
+.menus-item-description h4,
+.menus-item-description p {
+  margin: 0;
 }
 /*# sourceMappingURL=restaurant.css.map */
