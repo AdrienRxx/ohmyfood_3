@@ -1,3 +1,25 @@
+@-webkit-keyframes quarter-spin {
+  0% {
+    -webkit-transform: rotate(-270deg);
+            transform: rotate(-270deg);
+  }
+  100% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+}
+
+@keyframes quarter-spin {
+  0% {
+    -webkit-transform: rotate(-270deg);
+            transform: rotate(-270deg);
+  }
+  100% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+}
+
 .banner img {
   width: 100%;
   height: 60vh;
@@ -90,13 +112,16 @@ main:hover .fas {
 
 .menus .menus-category {
   background-color: white;
-  border-radius: 16px;
 }
 
 .menus .menus-category .menus-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  overflow: hidden;
+  border-radius: 16px;
+  -webkit-box-shadow: 2px 1px 16px -3px black;
+          box-shadow: 2px 1px 16px -3px black;
 }
 
 .menus .menus-category .menus-item .menus-item-price {
@@ -112,7 +137,30 @@ main:hover .fas {
 }
 
 .menus .menus-category .menus-item .menus-item-check {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  border-radius: 0 16px 16px 0;
   background-color: #99e2d0;
+  margin-right: -64px;
+  width: 64px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.menus .menus-category .menus-item .menus-item-check i {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  background: white;
+  aspect-ratio: 1;
+  width: 32px;
+  border-radius: 16px;
+  color: #99e2d0;
+}
+
+.menus .menus-category .menus-item:hover .menus-item-check .menus-item-check {
+  margin-right: 0;
 }
 
 .menus-item-description {
