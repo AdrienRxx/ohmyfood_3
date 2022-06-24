@@ -100,6 +100,26 @@ main {
   position: relative;
 }
 
+h3 {
+  text-transform: uppercase;
+  font-weight: 400;
+  position: relative;
+  background-color: $color-greyf6;
+  margin: 0;
+  padding: 20px 0 40px 40px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 40px;
+    top: 50px;
+    height: 4px;
+    width: 46px;
+    background-color: #99e2d0;
+
+  }
+}
+
 .menus {
   background-color: $color-greyf6;
   display: grid;
@@ -112,22 +132,7 @@ main {
     grid-template-columns: 1fr;
   }
 
-  h3 {
-    text-transform: uppercase;
-    font-weight: 400;
-    position: relative;
 
-    &::after {
-      content: "";
-      position: absolute;
-      left: 0px;
-      top: 24px;
-      height: 4px;
-      width: 46px;
-      background-color: $background-color-tertiary;
-
-    }
-  }
 
 
 
@@ -136,6 +141,7 @@ main {
     border-radius: 16px;
     overflow: hidden;
     box-shadow: $base-shadow;
+    height: 70px;
 
 
 
@@ -158,42 +164,48 @@ main {
         margin-right: -64px;
         width: 64px;
         transition: all 0.5s;
-
-        i {
-          display: grid;
-          place-items: center;
-          background: white;
-          aspect-ratio: 1;
-          width: 32px;
-          border-radius: 16px;
-          color: $background-color-tertiary;
-        }
+        height: 70px;
       }
 
-      &:hover {
-        .menus-item-check {
-          margin-right: 0;
-        }
+      i {
+        display: grid;
+        place-items: center;
+        background: white;
+        aspect-ratio: 1;
+        width: 32px;
+        border-radius: 16px;
+        color: $background-color-tertiary;
+      }
+    }
 
-        i {
-          animation: quarterspin 0.5s ease-in-out;
-        }
+    &:hover {
+      .menus-item-check {
+        margin-right: 0;
+      }
+
+      i {
+        animation: quarterspin 0.5s ease-in-out;
       }
     }
   }
 }
 
 
+
 .menus-item-description {
   margin: 0;
   padding: 8px;
   overflow: hidden;
+  max-width: 70%;
 
   h4 {
     margin: 0;
     overflow: hidden;
     white-space: nowrap;
+    padding-top: 6px;
+    margin-bottom: 7px;
     text-overflow: ellipsis;
+    font-size: 18px;
 
   }
 

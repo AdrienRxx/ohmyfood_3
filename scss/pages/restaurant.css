@@ -128,6 +128,25 @@ main:hover .fas {
   position: relative;
 }
 
+h3 {
+  text-transform: uppercase;
+  font-weight: 400;
+  position: relative;
+  background-color: #F6F6F6;
+  margin: 0;
+  padding: 20px 0 40px 40px;
+}
+
+h3::after {
+  content: "";
+  position: absolute;
+  left: 40px;
+  top: 50px;
+  height: 4px;
+  width: 46px;
+  background-color: #99e2d0;
+}
+
 .menus {
   background-color: #F6F6F6;
   display: -ms-grid;
@@ -145,28 +164,13 @@ main:hover .fas {
   }
 }
 
-.menus h3 {
-  text-transform: uppercase;
-  font-weight: 400;
-  position: relative;
-}
-
-.menus h3::after {
-  content: "";
-  position: absolute;
-  left: 0px;
-  top: 24px;
-  height: 4px;
-  width: 46px;
-  background-color: #99e2d0;
-}
-
 .menus .menus-category {
   background-color: white;
   border-radius: 16px;
   overflow: hidden;
-  -webkit-box-shadow: 2px 1px 16px -3px black;
-          box-shadow: 2px 1px 16px -3px black;
+  -webkit-box-shadow: 2px 1px 16px -3px silver;
+          box-shadow: 2px 1px 16px -3px silver;
+  height: 70px;
 }
 
 .menus .menus-category .menus-item {
@@ -197,9 +201,10 @@ main:hover .fas {
   width: 64px;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+  height: 70px;
 }
 
-.menus .menus-category .menus-item .menus-item-check i {
+.menus .menus-category .menus-item i {
   display: -ms-grid;
   display: grid;
   place-items: center;
@@ -210,11 +215,11 @@ main:hover .fas {
   color: #99e2d0;
 }
 
-.menus .menus-category .menus-item:hover .menus-item-check {
+.menus .menus-category:hover .menus-item-check {
   margin-right: 0;
 }
 
-.menus .menus-category .menus-item:hover i {
+.menus .menus-category:hover i {
   -webkit-animation: quarterspin 0.5s ease-in-out;
           animation: quarterspin 0.5s ease-in-out;
 }
@@ -223,13 +228,17 @@ main:hover .fas {
   margin: 0;
   padding: 8px;
   overflow: hidden;
+  max-width: 70%;
 }
 
 .menus-item-description h4 {
   margin: 0;
   overflow: hidden;
   white-space: nowrap;
+  padding-top: 6px;
+  margin-bottom: 7px;
   text-overflow: ellipsis;
+  font-size: 18px;
 }
 
 .menus-item-description p {
