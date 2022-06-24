@@ -1,4 +1,16 @@
-@-webkit-keyframes quarter-spin {
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100&family=Roboto:wght@300;400;500&family=Shrikhand&display=swap");
+@-webkit-keyframes quarterspin {
+  0% {
+    -webkit-transform: rotate(-270deg);
+            transform: rotate(-270deg);
+  }
+  100% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+}
+@keyframes quarterspin {
   0% {
     -webkit-transform: rotate(-270deg);
             transform: rotate(-270deg);
@@ -9,15 +21,38 @@
   }
 }
 
-@keyframes quarter-spin {
-  0% {
-    -webkit-transform: rotate(-270deg);
-            transform: rotate(-270deg);
+*,
+::before ::after {
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Header and city */
+header {
+  font-family: "Shrikhand", cursive;
+  text-align: center;
+  padding: 4px;
+  -webkit-box-shadow: 0 0 0.5rem black;
+          box-shadow: 0 0 0.5rem black;
+  margin: 0;
+  position: relative;
+}
+
+@media (max-width: 1000px) {
+  main {
+    padding: 0px;
   }
-  100% {
-    -webkit-transform: rotate(0);
-            transform: rotate(0);
-  }
+}
+
+body {
+  margin: 0px;
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .banner img {
@@ -110,18 +145,34 @@ main:hover .fas {
   }
 }
 
+.menus h3 {
+  text-transform: uppercase;
+  font-weight: 400;
+  position: relative;
+}
+
+.menus h3::after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 24px;
+  height: 4px;
+  width: 46px;
+  background-color: #99e2d0;
+}
+
 .menus .menus-category {
   background-color: white;
+  border-radius: 16px;
+  overflow: hidden;
+  -webkit-box-shadow: 2px 1px 16px -3px black;
+          box-shadow: 2px 1px 16px -3px black;
 }
 
 .menus .menus-category .menus-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  overflow: hidden;
-  border-radius: 16px;
-  -webkit-box-shadow: 2px 1px 16px -3px black;
-          box-shadow: 2px 1px 16px -3px black;
 }
 
 .menus .menus-category .menus-item .menus-item-price {
@@ -159,17 +210,48 @@ main:hover .fas {
   color: #99e2d0;
 }
 
-.menus .menus-category .menus-item:hover .menus-item-check .menus-item-check {
+.menus .menus-category .menus-item:hover .menus-item-check {
   margin-right: 0;
+}
+
+.menus .menus-category .menus-item:hover i {
+  -webkit-animation: quarterspin 0.5s ease-in-out;
+          animation: quarterspin 0.5s ease-in-out;
 }
 
 .menus-item-description {
   margin: 0;
   padding: 8px;
+  overflow: hidden;
 }
 
-.menus-item-description h4,
+.menus-item-description h4 {
+  margin: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
 .menus-item-description p {
   margin: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+footer {
+  background-color: #353535;
+  padding: 16px 32px;
+  color: white;
+}
+
+footer h2 {
+  font-family: "Shrikhand", "sans-serif";
+  font-weight: 500;
+}
+
+footer i.fas {
+  width: 25px;
+  height: 100%;
 }
 /*# sourceMappingURL=restaurant.css.map */

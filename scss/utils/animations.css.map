@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "AAAC,UAAU,CAAV,WAAU;EACN,EAAE;IACE,SAAS,EAAE,eAAe;;EAG9B,IAAI;IACA,SAAS,EAAE,SAAS",
     "sources": [
         "animations.scss"
     ],

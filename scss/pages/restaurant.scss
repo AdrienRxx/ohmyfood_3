@@ -1,5 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100&family=Roboto:wght@300;400;500&family=Shrikhand&display=swap");
 @import "../utils/utils.scss";
 @import "../utils/animations.scss";
+
+*,
+::before ::after {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Header and city */
+
+header {
+  font-family: "Shrikhand", cursive;
+  text-align: center;
+  padding: 4px;
+  box-shadow: 0 0 0.5rem rgb(0, 0, 0 / 25%);
+  margin: 0;
+  position: relative;
+}
+
+main {
+  @media (max-width:1000px) {
+    padding: 0px;
+  }
+}
+
+body {
+  margin: 0px;
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
 
 .banner img {
   width: 100%;
@@ -72,25 +107,40 @@ main {
   gap: 16px;
   padding: 0 32px;
 
+
   @media (max-width: 767px) {
     grid-template-columns: 1fr;
+  }
+
+  h3 {
+    text-transform: uppercase;
+    font-weight: 400;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0px;
+      top: 24px;
+      height: 4px;
+      width: 46px;
+      background-color: $background-color-tertiary;
+
+    }
   }
 
 
 
   .menus-category {
     background-color: white;
+    border-radius: 16px;
     overflow: hidden;
+    box-shadow: $base-shadow;
+
 
 
     .menus-item {
       display: flex;
-      overflow: hidden;
-      border-radius: 16px;
-      box-shadow: $base-shadow;
-      white-space: nowrap;
-      text-overflow: ellipsis;
-
 
       .menus-item-price {
         margin-left: auto;
@@ -120,20 +170,19 @@ main {
         }
       }
 
-      &:hover .menus-item-check {
+      &:hover {
         .menus-item-check {
           margin-right: 0;
         }
 
         i {
-          @include animations.quarterspin;
           animation: quarterspin 0.5s ease-in-out;
         }
       }
     }
   }
-
 }
+
 
 .menus-item-description {
   margin: 0;
@@ -154,5 +203,21 @@ main {
     white-space: nowrap;
     text-overflow: ellipsis;
 
+  }
+}
+
+footer {
+  background-color: $background-color-footer;
+  padding: 16px 32px;
+  color: white;
+
+  h2 {
+    font-family: "Shrikhand", "sans-serif";
+    font-weight: 500;
+  }
+
+  & i.fas {
+    width: 25px;
+    height: 100%
   }
 }
