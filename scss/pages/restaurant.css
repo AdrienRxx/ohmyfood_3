@@ -23,23 +23,63 @@
 
 @-webkit-keyframes appear {
   0% {
-    -webkit-transform: scale(0);
-            transform: scale(0);
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%);
+    opacity: 0;
   }
   100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
   }
 }
 
 @keyframes appear {
   0% {
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes disappear {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
     -webkit-transform: scale(0);
             transform: scale(0);
   }
-  100% {
+}
+
+@keyframes disappear {
+  0% {
     -webkit-transform: scale(1);
             transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+
+@-webkit-keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }
 
@@ -319,8 +359,9 @@ footer i.fas {
 
 .commander-button {
   text-align: center;
-  margin-bottom: 45px;
-  margin-top: 45px;
+  padding-bottom: 45px;
+  padding-top: 45px;
+  background-color: #F8f8f8;
 }
 
 .commander-button button {
