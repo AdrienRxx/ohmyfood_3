@@ -233,3 +233,27 @@ footer {
     height: 100%
   }
 }
+
+.commander-button {
+  text-align: center;
+}
+
+.commander-button button {
+  color: white;
+  font-weight: 300;
+  font-size: 15px;
+  padding: 16px 32px;
+  border: none;
+  border-radius: 32px;
+  margin-top: 16px;
+  box-shadow: $base-shadow;
+  background-image: $gradient;
+  transition: transform 100ms;
+  align-items: center;
+}
+
+.commander-button button:hover {
+  transform: scale(1.02);
+  opacity: 0.9;
+  cursor: pointer;
+}

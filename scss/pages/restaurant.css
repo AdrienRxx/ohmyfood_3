@@ -263,4 +263,36 @@ footer i.fas {
   width: 25px;
   height: 100%;
 }
+
+.commander-button {
+  text-align: center;
+}
+
+.commander-button button {
+  color: white;
+  font-weight: 300;
+  font-size: 15px;
+  padding: 16px 32px;
+  border: none;
+  border-radius: 32px;
+  margin-top: 16px;
+  -webkit-box-shadow: 2px 1px 16px -3px silver;
+          box-shadow: 2px 1px 16px -3px silver;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#9356dc), to(#ff79da));
+  background-image: linear-gradient(to top, #9356dc, #ff79da);
+  -webkit-transition: -webkit-transform 100ms;
+  transition: -webkit-transform 100ms;
+  transition: transform 100ms;
+  transition: transform 100ms, -webkit-transform 100ms;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.commander-button button:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+  opacity: 0.9;
+  cursor: pointer;
+}
 /*# sourceMappingURL=restaurant.css.map */
