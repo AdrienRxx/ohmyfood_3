@@ -1,5 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100&family=Roboto:wght@300;400;500&family=Shrikhand&display=swap");
+@-webkit-keyframes quarterspin {
+  0% {
+    -webkit-transform: rotate(-270deg);
+            transform: rotate(-270deg);
+  }
+  100% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+}
+@keyframes quarterspin {
+  0% {
+    -webkit-transform: rotate(-270deg);
+            transform: rotate(-270deg);
+  }
+  100% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+}
+
 *,
 ::before ::after {
   margin: 0;
@@ -58,7 +79,7 @@ main .city i {
 .text-explorer {
   text-align: center;
   margin-bottom: 64px;
-  background-color: #F6F6F6;
+  background-color: #F8f8f8;
   padding-bottom: 42px;
   padding-top: 18px;
 }
@@ -80,8 +101,8 @@ main .city i {
   border: none;
   border-radius: 32px;
   margin-top: 16px;
-  -webkit-box-shadow: 2px 1px 16px -3px black;
-          box-shadow: 2px 1px 16px -3px black;
+  -webkit-box-shadow: 2px 1px 16px -3px silver;
+          box-shadow: 2px 1px 16px -3px silver;
   background-image: -webkit-gradient(linear, left bottom, left top, from(#9356dc), to(#ff79da));
   background-image: linear-gradient(to top, #9356dc, #ff79da);
   -webkit-transition: -webkit-transform 100ms;
@@ -121,13 +142,13 @@ main .city i {
 
 .working li {
   position: relative;
-  background-color: #F6F6F6;
+  background-color: #F8f8f8;
   list-style-type: none;
-  background-color: #F6F6F6;
+  background-color: #F8f8f8;
   padding: 24px 32px;
   border-radius: 16px;
-  -webkit-box-shadow: 2px 1px 16px -3px black;
-          box-shadow: 2px 1px 16px -3px black;
+  -webkit-box-shadow: 2px 1px 16px -3px silver;
+          box-shadow: 2px 1px 16px -3px silver;
   font-weight: bold;
 }
 
@@ -172,7 +193,7 @@ main .city i {
 
 /* Menus */
 .menus {
-  background-color: #F6F6F6;
+  background-color: #F8f8f8;
   padding-left: 16px;
   padding-right: 16px;
   padding-bottom: 52px;

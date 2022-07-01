@@ -115,7 +115,7 @@ main:hover .fas {
           align-items: center;
   z-index: 1;
   position: relative;
-  background-color: #F6F6F6;
+  background-color: #F8f8f8;
   border-radius: 32px 32px 0 0;
 }
 
@@ -132,7 +132,7 @@ h3 {
   text-transform: uppercase;
   font-weight: 400;
   position: relative;
-  background-color: #F6F6F6;
+  background-color: #F8f8f8;
   margin: 0;
   padding: 20px 0 40px 40px;
 }
@@ -148,7 +148,7 @@ h3::after {
 }
 
 .menus {
-  background-color: #F6F6F6;
+  background-color: #F8f8f8;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[3];
