@@ -39,6 +39,18 @@ header {
   position: relative;
 }
 
+header i {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  left: 25px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-size: 20px;
+}
+
 @media (max-width: 1000px) {
   main {
     padding: 0px;
@@ -266,6 +278,8 @@ footer i.fas {
 
 .commander-button {
   text-align: center;
+  margin-bottom: 45px;
+  margin-top: 45px;
 }
 
 .commander-button button {
