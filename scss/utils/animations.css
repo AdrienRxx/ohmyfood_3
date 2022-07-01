@@ -8,6 +8,7 @@
             transform: rotate(0);
   }
 }
+
 @keyframes quarterspin {
   0% {
     -webkit-transform: rotate(-270deg);
@@ -16,6 +17,32 @@
   100% {
     -webkit-transform: rotate(0);
             transform: rotate(0);
+  }
+}
+
+@-webkit-keyframes appear {
+  0% {
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes appear {
+  0% {
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
   }
 }
 /*# sourceMappingURL=animations.css.map */
