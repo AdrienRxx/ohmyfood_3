@@ -391,4 +391,8 @@ footer i.fas {
   opacity: 0.9;
   cursor: pointer;
 }
+
+.resto-main h2 {
+  padding-left: 40px;
+}
 /*# sourceMappingURL=restaurant.css.map */
