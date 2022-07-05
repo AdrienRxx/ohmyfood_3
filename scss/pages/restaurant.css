@@ -113,6 +113,11 @@ header i {
   font-size: 20px;
 }
 
+main {
+  max-width: 1600px;
+  margin: auto;
+}
+
 @media (max-width: 1000px) {
   main {
     padding: 0px;
