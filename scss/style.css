@@ -110,6 +110,7 @@
 .loader i {
   -webkit-animation: spin 3s infinite linear;
           animation: spin 3s infinite linear;
+  color: #9356DC;
 }
 
 header {
@@ -173,7 +174,6 @@ main .city i {
 }
 
 .text-explorer h2 {
-  margin-top: 32 px;
   font-size: 32px;
 }
 
@@ -296,17 +296,28 @@ main .city i {
 }
 
 .menus .menus-cards {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
-  gap: 0px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-@media (max-width: 767px) {
-  .menus .menus-cards {
-    -ms-grid-columns: (1fr)[1];
-        grid-template-columns: repeat(1, 1fr);
+.menus .menus-cards a {
+  width: 96%;
+  max-width: 350px;
+  margin: 10px 15px;
+}
+
+@media (min-width: 1130px) and (max-width: 1568px) {
+  .menus .menus-cards a {
+    max-width: 500px;
   }
 }
 

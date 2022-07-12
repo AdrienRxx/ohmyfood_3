@@ -24,6 +24,7 @@
 
   i {
     animation: spin 3s infinite linear;
+    color: #9356DC;
   }
 }
 
@@ -80,7 +81,6 @@ main .city i {
 }
 
 .text-explorer h2 {
-  margin-top: 32 px;
   font-size: 32px;
 }
 
@@ -188,13 +188,22 @@ main .city i {
   }
 
   .menus-cards {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 0px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 
-    @media (max-width: 767px) {
-      grid-template-columns: repeat(1, 1fr);
+    a {
+      width: 96%;
+      max-width: 350px;
+      margin: 10px 15px;
+
+      @media (min-width: 1130px) and (max-width: 1568px) {
+        max-width: 500px;
+      }
     }
+
+
 
     .new {
       position: relative;

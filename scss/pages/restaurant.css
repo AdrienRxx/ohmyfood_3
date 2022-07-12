@@ -228,10 +228,17 @@ h3::after {
 
 .menus {
   background-color: #F8f8f8;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 16px;
   padding: 0 32px;
 }
@@ -250,6 +257,8 @@ h3::after {
   -webkit-box-shadow: 2px 1px 16px -3px silver;
           box-shadow: 2px 1px 16px -3px silver;
   height: 70px;
+  width: 96%;
+  max-width: 350px;
   -webkit-animation: appear 1s;
           animation: appear 1s;
   -webkit-animation-fill-mode: both;
@@ -307,7 +316,7 @@ h3::after {
   display: grid;
   place-items: center;
   background: white;
-  aspect-ratio: 1;
+  height: 32px;
   width: 32px;
   border-radius: 16px;
   color: #99e2d0;
